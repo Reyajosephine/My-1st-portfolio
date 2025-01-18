@@ -1,0 +1,234 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #f4f4f4;
+    line-height: 1.6;
+    background: #121212;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to right, #8e44ad, #9b59b6);
+    color: white;
+    padding: 5rem 0;
+    text-align: center;
+    position: relative;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    border: 3px solid #fff;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    margin: 1rem 0 2rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.hero-content .btn-primary {
+    background: white;
+    color: #8e44ad;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.hero-content .btn-primary:hover {
+    background: #9b59b6;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    background: #2c3e50;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #8e44ad;
+    transition: width 0.3s ease;
+}
+
+.navbar a:hover {
+    color: #8e44ad;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+/* Sections */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    color: #8e44ad;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* About Section */
+.section-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.skills-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.skills-list li {
+    background: #2c3e50;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.skills-list li:hover {
+    background: #9b59b6;
+}
+
+.skills-list li i {
+    color: #8e44ad;
+}
+
+/* Experience Section */
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.card {
+    background: #2c3e50;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Projects Section */
+.projects-carousel {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+}
+
+.projects-carousel .card {
+    flex: 0 0 300px;
+    background: #2c3e50;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects-carousel .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact Section */
+.contact-info {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #8e44ad;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: #9b59b6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+
+footer a {
+    color: #8e44ad;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Scroll-to-top button */
+footer a {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 1.2rem;
+}
